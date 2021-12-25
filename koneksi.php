@@ -1,11 +1,12 @@
 <?php
-$host="localhost";
-$username="root";
-$password="";
-$databasename="akademik";
-$con=@mysqli_connect($host,$username,$password,$databasename);
-if (!$con) {
- echo "Error: " . mysqli_connect_error();
-exit();
+$host       ="localhost";
+$username     ="id18172819_mahasiswa";
+$password     ="kGGj~v2)Lvu|gqxK";
+$database     ="id18172819_akademik";
+
+$connect = mysqli_connect($host, $username, $password, $database);
+if(!$connect){
+    die("error : ".mysqli_connect_error());
+    
 }
 ?>
